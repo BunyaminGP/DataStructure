@@ -16,7 +16,7 @@ void dfs(int node) {
     }
 }
 
-// BFS
+
 void bfs(int start) {
     int queue[100];
     int front = 0, rear = 0;
