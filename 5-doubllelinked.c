@@ -75,10 +75,8 @@ int main() {
     ucuncu->prev = ikinci;
 
     yazdir(head);
-
     arayaEkle(head, 46,48);
     yazdir(head);
-
     head = sil(head, 45);
     yazdir(head);
 
