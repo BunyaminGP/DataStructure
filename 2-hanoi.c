@@ -25,6 +25,5 @@ int main() {
 
     // A: kaynak, B: yardimci, C: hedef
     hanoi(diskSayisi, 'A', 'B', 'C');
-
     return 0;
 }
