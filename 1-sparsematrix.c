@@ -2,7 +2,6 @@
 
 #define MAX 100
 
-
 void matrisOku(int mat[MAX][MAX], int satir, int sutun) {
 
     printf("Matrisi giriniz:\n");
