@@ -2,7 +2,6 @@
 
 #define MAX 100
 
-// Matrisi kullanicidan alır.
 
 void matrisOku(int mat[MAX][MAX], int satir, int sutun) {
 
@@ -15,7 +14,6 @@ void matrisOku(int mat[MAX][MAX], int satir, int sutun) {
     }
 }
 
-// Sıfır olmayan eleman sayisini buluyor.
 int sifirOlmayanSayisiBul(int mat[MAX][MAX], int satir, int sutun) {
 
     int sayac = 0;
@@ -29,10 +27,6 @@ int sifirOlmayanSayisiBul(int mat[MAX][MAX], int satir, int sutun) {
 
     return sayac;
 }
-
-
-
-// Normal matrisi sparse (triplet) matrise dönüştürür.
 
 void sparseDonustur(int mat[MAX][MAX], int satir, int sutun, int sparse[MAX][3]) {
     int k = 1;

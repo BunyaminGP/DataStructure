@@ -79,9 +79,9 @@ struct Node* sil(struct Node* head, int silinecek) {
 }
 
 int main() {
-    struct Node* head = dugumOlustur(1907);
-    struct Node* ikinci = dugumOlustur(1905);
-    struct Node* ucuncu = dugumOlustur(1903);
+    struct Node* head = dugumOlustur(1);
+    struct Node* ikinci = dugumOlustur(2);
+    struct Node* ucuncu = dugumOlustur(3);
 
     head->next = ikinci;
     ikinci->next = ucuncu;
@@ -89,13 +89,13 @@ int main() {
 
     yazdir(head);
 
-    arayaEkle(head, 1907, 1961);
+    arayaEkle(head, 1, 4);
     yazdir(head);
 
-    head = sil(head, 1961);
+    head = sil(head, 4);
     yazdir(head);
 
-    head = sil(head, 1903);
+    head = sil(head, 3);
     yazdir(head);
 
     return 0;

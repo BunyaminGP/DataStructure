@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Cift yonlu liste düğümü
+
 struct Node {
     int data;
     struct Node* next; // ileri
     struct Node* prev; // geri
 };
 
-// Yeni düğüm oluştur
 struct Node* dugumOlustur(int veri) {
     struct Node* yeni = (struct Node*)malloc(sizeof(struct Node));
     yeni->data = veri;
@@ -17,7 +16,6 @@ struct Node* dugumOlustur(int veri) {
     return yeni;
 }
 
-// Listeyi yazdır (traversal)
 void yazdir(struct Node* head) {
     while (head != NULL) {
         printf("%d <-> ", head->data);
@@ -26,7 +24,7 @@ void yazdir(struct Node* head) {
     printf("NULL\n");
 }
 
-// Araya eleman ekleme
+
 void arayaEkle(struct Node* head, int sonra, int eklenecek) {
     while (head != NULL && head->data != sonra) {
         head = head->next;
@@ -44,7 +42,7 @@ void arayaEkle(struct Node* head, int sonra, int eklenecek) {
     head->next = yeni;
 }
 
-// Silme (değerine göre)
+
 struct Node* sil(struct Node* head, int silinecek) {
     struct Node* temp = head;
 

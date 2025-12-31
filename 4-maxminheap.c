@@ -16,7 +16,6 @@ void swap(int *a, int *b) {
     *b = t;
 }
 
-// Heap'i ekrana yazdırır
 void heapYazdir(Heap *h) {
     printf("Heap: ");
     for (int i = 0; i < h->boyut; i++) {
@@ -27,7 +26,7 @@ void heapYazdir(Heap *h) {
 
 // Max heap fonksiyonları
 
-// Max-Heap: Aşağı doğru düzeltme (heapify-down)
+
 void maxHeapifyAsagi(Heap *h, int i) {
     while (1) {
         int sol = 2 * i + 1;
@@ -43,7 +42,7 @@ void maxHeapifyAsagi(Heap *h, int i) {
     }
 }
 
-// Max-Heap: Yukarı doğru düzeltme (heapify-up)
+
 void maxHeapifyYukari(Heap *h, int i) {
     while (i > 0) {
         int ebeveyn = (i - 1) / 2;
@@ -53,7 +52,6 @@ void maxHeapifyYukari(Heap *h, int i) {
     }
 }
 
-// Max-Heap: Ekleme
 void maxHeapEkle(Heap *h, int deger) {
     if (h->boyut >= MAX) {
         printf("Hata: Heap dolu!\n");
@@ -64,7 +62,6 @@ void maxHeapEkle(Heap *h, int deger) {
     h->boyut++;
 }
 
-// Max-Heap: Kökü (maksimum) çıkarma
 int maxHeapCikar(Heap *h) {
     if (h->boyut <= 0) {
         printf("Hata: Heap bos!\n");
@@ -79,7 +76,7 @@ int maxHeapCikar(Heap *h) {
 
 // Minimum Heap fonksiyonları
 
-// Min-Heap: Aşağı doğru düzeltme (heapify-down)
+
 void minHeapifyAsagi(Heap *h, int i) {
     while (1) {
         int sol = 2 * i + 1;
@@ -95,7 +92,6 @@ void minHeapifyAsagi(Heap *h, int i) {
     }
 }
 
-// Min-Heap: Yukarı doğru düzeltme (heapify-up)
 void minHeapifyYukari(Heap *h, int i) {
     while (i > 0) {
         int ebeveyn = (i - 1) / 2;
@@ -105,7 +101,7 @@ void minHeapifyYukari(Heap *h, int i) {
     }
 }
 
-// Min-Heap: Ekleme
+
 void minHeapEkle(Heap *h, int deger) {
     if (h->boyut >= MAX) {
         printf("Hata: Heap dolu!\n");
@@ -116,7 +112,7 @@ void minHeapEkle(Heap *h, int deger) {
     h->boyut++;
 }
 
-// Min-Heap: Kökü (minimum) çıkarma
+
 int minHeapCikar(Heap *h) {
     if (h->boyut <= 0) {
         printf("Hata: Heap bos!\n");
