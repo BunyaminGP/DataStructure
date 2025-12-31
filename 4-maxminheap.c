@@ -112,7 +112,6 @@ void minHeapEkle(Heap *h, int deger) {
     h->boyut++;
 }
 
-
 int minHeapCikar(Heap *h) {
     if (h->boyut <= 0) {
         printf("Hata: Heap bos!\n");
